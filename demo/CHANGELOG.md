@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/paci1828/ConventionalCommitsTest/compare/v1.4.1...v1.4.2) (2023-12-20)
+
+
+### Bug Fixes
+
+* add new api ([a0beba6](https://github.com/paci1828/ConventionalCommitsTest/commit/a0beba6a212393375ad1231613808f433515fe14))
+* remove service ([54d9832](https://github.com/paci1828/ConventionalCommitsTest/commit/54d983243f9a9e2af44f185dc0d1cc8fe1d0a0e6))
+
 ### [1.4.1](https://github.com/paci1828/ConventionalCommitsTest/compare/v1.4.0...v1.4.1) (2023-12-20)
 
 ## [1.4.0](https://github.com/paci1828/ConventionalCommitsTest/compare/v1.3.9...v1.4.0) (2023-12-20)
