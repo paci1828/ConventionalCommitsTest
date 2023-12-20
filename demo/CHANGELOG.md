@@ -1,5 +1,21 @@
 # Changelog
 
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.4.0](https://github.com/paci1828/ConventionalCommitsTest/compare/v1.3.9...v1.4.0) (2023-12-20)
+
+
+### Features
+
+* add new api ([d5dccec](https://github.com/paci1828/ConventionalCommitsTest/commit/d5dccec05b38b4583cae4284e257a1e2cf022f63))
+* remove controller ([2b79a58](https://github.com/paci1828/ConventionalCommitsTest/commit/2b79a5851c52ebcdd19d11b3cc060bf4600d76c1))
+
+
+### Bug Fixes
+
+* remove api ([8ff18b3](https://github.com/paci1828/ConventionalCommitsTest/commit/8ff18b3bcb1c706527ad8cf0821f6fe90ecc146c))
+* remove controller ([b49b60c](https://github.com/paci1828/ConventionalCommitsTest/commit/b49b60cae9d6adb5354086634b1374ff6130a094))
+
 ## [1.3.0](https://github.com/paci1828/ConventionalCommitsTest/compare/v1.1.0...v1.3.0) (2023-12-20)
 
 
