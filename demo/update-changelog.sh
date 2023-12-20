@@ -28,7 +28,7 @@ new_version=$(awk -F'"' '/"version":/ {print $4}' package.json)
 changelog_content=$(cat CHANGELOG.md)
 
 # Rimuovi l'intestazione standard
-changelog_content=$(echo "$changelog_content" | awk '!/^# Change Log$/{print}')
+changelog_content=$(echo "$changelog_content" | awk '!/^# Change Log$/{print}' | sed '/All notable changes to this project will be documented in this file. See standard-version for commit guidelines./d')
 
 # Controlla se ci sono versioni con features, bug fix o refactoring
 if [[ "$changelog_content" =~ ^##\ $new_version.*\n\ \*\*\[.*\]\*\*.*$ ]]; then
