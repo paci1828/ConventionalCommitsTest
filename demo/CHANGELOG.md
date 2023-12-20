@@ -1,9 +1,5 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-### [1.3.9](https://github.com/paci1828/ConventionalCommitsTest/compare/v1.3.8...v1.3.9) (2023-12-20)
-
 ## [1.3.0](https://github.com/paci1828/ConventionalCommitsTest/compare/v1.1.0...v1.3.0) (2023-12-20)
 
 
