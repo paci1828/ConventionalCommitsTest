@@ -18,7 +18,6 @@
 
 
 
-
 # Esegui standard-version per incrementare la versione e generare il changelog
 standard-version -a --commit-all --releaseCommitMessageFormat "chore(release): %s"
 
@@ -33,8 +32,11 @@ changelog_content=$(echo "$changelog_content" | awk '!/^# Change Log$/{print}')
 
 # Controlla se ci sono versioni con features, bug fix o refactoring
 if [[ "$changelog_content" =~ ^##\ $new_version.*\n\ \*\*\[.*\]\*\*.*$ ]]; then
+  # Rimuovi la frase standard
+  changelog_content=$(echo "$changelog_content" | sed '/All notable changes to this project will be documented in this file. See standard-version for commit guidelines./d')
+
   # Scrivi le informazioni nel changelog
-  echo -e "## $new_version ($(date +"%Y-%m-%d"))\n\n$changelog_content" > CHANGELOG.md
+  echo -e "# Changelog\n\n## $new_version ($(date +"%Y-%m-%d"))\n\n$changelog_content" > CHANGELOG.md
 
   # Fai il commit del changelog aggiornato
   git add CHANGELOG.md
