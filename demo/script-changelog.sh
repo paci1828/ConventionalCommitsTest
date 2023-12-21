@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# Verifica se commitizen è installato globalmente, altrimenti installalo
-if ! command -v git-cz &> /dev/null; then
-    npm install -g commitizen
-fi
-
+#     npm install -g commitizen
 # Verifica se CHANGELOG.md esiste, altrimenti crea uno scheletro del changelog
 if [ ! -f CHANGELOG.md ]; then
     echo "# Changelog" > CHANGELOG.md
