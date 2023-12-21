@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.8](https://github.com/paci1828/ConventionalCommitsTest/compare/v1.4.7...v1.4.8) (2023-12-21)
+
 ### [1.4.7](https://github.com/paci1828/ConventionalCommitsTest/compare/v1.4.6...v1.4.7) (2023-12-21)
 
 ### [1.4.2](https://github.com/paci1828/ConventionalCommitsTest/compare/v1.4.1...v1.4.2) (2023-12-20)
