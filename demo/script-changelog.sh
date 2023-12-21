@@ -6,10 +6,10 @@ set -e
 VERSION=$(npm version patch --no-git-tag-version)
 
 # Get last version from changelog
-LAST_VERSION=$(grep -m1 -oP '(?<=## )\d+\.\d+\.\d+' CHANGELOG.md || echo $VERSION)
+LAST_VERSION=$(grep -m1 -oP '(?<=## )\d+\.\d+\.\d+' CHANGELOG.md || echo "$VERSION")
 
 # Create commit message
-COMMIT_MESSAGE=$(echo -e "chore(release): $VERSION\n\n$(git log --pretty=format:'%s' $LAST_VERSION..HEAD | commitizen)")
+COMMIT_MESSAGE=$(echo -e "chore(release): $VERSION\n\n$(git log --pretty=format:'%s' "$LAST_VERSION"..HEAD | commitizen)")
 
 # Commit changes
 git add .
