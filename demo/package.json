@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "changelog": "npm run check-commits && conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && npm run increment-version",
     "check-commits": "git log --oneline HEAD...HEAD@{1} | wc -l | tr -d '[:space:]'",
