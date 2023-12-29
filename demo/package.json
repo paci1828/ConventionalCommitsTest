@@ -1,6 +1,9 @@
 {
+  "version": "1.0.1",
   "scripts": {
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "changelog": "npm run check-commits && conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && npm run increment-version",
+    "check-commits": "git log --oneline HEAD...HEAD@{1} | wc -l | tr -d '[:space:]'",
+    "increment-version": "npm version patch"
   },
   "config": {
     "commitizen": {
