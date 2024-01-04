@@ -1,3 +1,9 @@
+## v1.0.2 (2024-01-04)
+
+### Refactor
+
+- **delete-space**: refactoring
+
 ## v1.0.1 (2024-01-04)
 
 ### Fix
