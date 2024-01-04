@@ -1,3 +1,13 @@
+## v2.0.0 (2024-01-04)
+
+### Feat
+
+- **add-new-method**: add a new mwethod in the controller
+
+### Refactor
+
+- **delete-space**: delete space in Service
+
 ## v1.0.2 (2024-01-04)
 
 ### Refactor
