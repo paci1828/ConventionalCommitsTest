@@ -1,3 +1,9 @@
+## v1.0.1 (2024-01-04)
+
+### Fix
+
+- **resolve-a-bug-on-the-api**: add a method for the bug
+
 ## v1.0.0 (2024-01-04)
 
 ### Feat

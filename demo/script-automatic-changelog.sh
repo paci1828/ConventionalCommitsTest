@@ -7,7 +7,6 @@ if git diff-index --quiet HEAD --; then
 else
     # Aggiungi tutti i file modificati al tuo commit
     git add .
-git cz;
     # Esegui il commit utilizzando Commitizen
 #    if git cz; then
 #        echo "Commit eseguito con successo."
