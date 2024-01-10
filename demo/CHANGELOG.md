@@ -3,9 +3,7 @@
 ### Refactor
 
 - **delete-a-method**: delete method 1 and method 2 in controller
-
-## v3.0.1 (2024-01-05)
-
+git 
 ## v3.0.0 (2024-01-04)
 
 ### Feat
