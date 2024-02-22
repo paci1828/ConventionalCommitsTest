@@ -1,21 +1,24 @@
-name: Generate Release Notes
-
+name: Generate Release Note
 on:
   push:
-    tags: [ "v*" ]
+    branches:
+      - main  # Cambia "main" con il nome del tuo branch principale se necessario
 
 jobs:
-  build:
+  generate-release-note:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Generate Release Note
+        id: release_note
+        run: |
+          # Qui inserisci lo script o il comando per generare la release note, ad esempio:
+          echo "Release note generated from commit: $(git log --pretty=format:'%h - %s' -n 10)" > release_note.txt
+
+      - name: Upload Release Note
+        uses: actions/upload-artifact@v2
         with:
-          node-version: '16'
-      - run: npm install -g release-notes-builder
-      - run: release-notes-builder generate --tag-prefix 'v' --format markdown > CHANGELOG.md
-      - uses: actions/create-release@v3
-        with:
-          tag_name: ${{ github.ref }}
-          release_body_type: "file"
-          release_body_file: CHANGELOG.md
+          name: release-note
+          path: release_note.txt
